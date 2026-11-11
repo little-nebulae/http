@@ -1,10 +1,14 @@
 import type { ValueOf } from "type-fest";
 
 import { HTTP_ERROR_RESPONSE_STATUS_ENUM } from "@/constants/response-statuses/error";
+import { HTTP_INFORMATIONAL_RESPONSE_STATUS_ENUM } from "@/constants/response-statuses/information";
+import { HTTP_REDIRECTION_RESPONSE_STATUS_ENUM } from "@/constants/response-statuses/redirection";
 import { HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM } from "@/constants/response-statuses/success";
 
 export const HTTP_RESPONSE_STATUS_RECORD = {
+  ...HTTP_INFORMATIONAL_RESPONSE_STATUS_ENUM,
   ...HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM,
+  ...HTTP_REDIRECTION_RESPONSE_STATUS_ENUM,
   ...HTTP_ERROR_RESPONSE_STATUS_ENUM,
 } as const;
 
