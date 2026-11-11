@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@arethetypeswrong/core": "0.18.5",
-    "@little-nebulae/type-utils": "1.1.0",
     "@types/node": "26.6.2",
     "oxfmt": "0.68.0",
     "oxlint": "1.83.0",
@@ -31,11 +30,12 @@
     "publint": "0.3.24",
     "tsdown": "0.23.0",
     "tsx": "4.23.13",
+    "type-fest": "5.10.0",
     "typescript": "7.0.2",
     "vitest": "5.0.1"
   },
   "peerDependencies": {
-    "@little-nebulae/type-utils": "^1.0.0"
+    "type-fest": "^5.0.0"
   },
   "devEngines": {
     "packageManager": {
