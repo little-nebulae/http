@@ -15,9 +15,10 @@ export const HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM = {
   },
 } as const;
 
-export type HttpSuccessfulResponseStatusEnum =
-  typeof HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM;
+type HttpSuccessfulResponseStatus = ValueOf<
+  typeof HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM
+>;
 export type HttpSuccessfulResponseStatusCode =
-  ValueOf<HttpSuccessfulResponseStatusEnum>["code"];
+  HttpSuccessfulResponseStatus["code"];
 export type HttpSuccessfulResponseStatusText =
-  ValueOf<HttpSuccessfulResponseStatusEnum>["text"];
+  HttpSuccessfulResponseStatus["text"];
