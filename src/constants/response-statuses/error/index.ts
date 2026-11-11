@@ -1,16 +1,15 @@
-import type { ValueOf } from "@little-nebulae/type-utils";
+import type { ValueOf } from "type-fest";
 
-import { HTTP_CLIENT_ERROR_RESPONSE_STATUS_RECORD } from "@/constants/response-statuses/error/client";
-import { HTTP_SERVER_ERROR_RESPONSE_STATUS_RECORD } from "@/constants/response-statuses/error/server";
+import { HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM } from "@/constants/response-statuses/error/client";
+import { HTTP_SERVER_ERROR_RESPONSE_STATUS_ENUM } from "@/constants/response-statuses/error/server";
 
 export const HTTP_ERROR_RESPONSE_STATUS_RECORD = {
-  ...HTTP_CLIENT_ERROR_RESPONSE_STATUS_RECORD,
-  ...HTTP_SERVER_ERROR_RESPONSE_STATUS_RECORD,
+  ...HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM,
+  ...HTTP_SERVER_ERROR_RESPONSE_STATUS_ENUM,
 } as const;
 
-export type HttpErrorResponseStatusRecord =
-  typeof HTTP_ERROR_RESPONSE_STATUS_RECORD;
-export type HttpErrorResponseStatusCode =
-  ValueOf<HttpErrorResponseStatusRecord>["code"];
-export type HttpErrorResponseStatusText =
-  ValueOf<HttpErrorResponseStatusRecord>["text"];
+type HttpErrorResponseStatus = ValueOf<
+  typeof HTTP_ERROR_RESPONSE_STATUS_RECORD
+>;
+export type HttpErrorResponseStatusCode = HttpErrorResponseStatus["code"];
+export type HttpErrorResponseStatusText = HttpErrorResponseStatus["text"];
