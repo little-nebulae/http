@@ -1,4 +1,4 @@
-import type { ValueOf } from "@little-nebulae/type-utils";
+import type { ValueOf } from "type-fest";
 
 export const HTTP_SERVER_ERROR_RESPONSE_STATUS_RECORD = {
   INTERNAL_SERVER_ERROR: {
@@ -15,9 +15,10 @@ export const HTTP_SERVER_ERROR_RESPONSE_STATUS_RECORD = {
   },
 } as const;
 
-export type HttpServerErrorResponseStatusRecord =
-  typeof HTTP_SERVER_ERROR_RESPONSE_STATUS_RECORD;
+type HttpServerErrorResponseStatus = ValueOf<
+  typeof HTTP_SERVER_ERROR_RESPONSE_STATUS_RECORD
+>;
 export type HttpServerErrorResponseStatusCode =
-  ValueOf<HttpServerErrorResponseStatusRecord>["code"];
+  HttpServerErrorResponseStatus["code"];
 export type HttpServerErrorResponseStatusText =
-  ValueOf<HttpServerErrorResponseStatusRecord>["text"];
+  HttpServerErrorResponseStatus["text"];
