@@ -1,6 +1,6 @@
-import type { ValueOf } from "@little-nebulae/type-utils";
+import type { ValueOf } from "type-fest";
 
-export const HTTP_REQUEST_METHOD_RECORD = {
+export const HTTP_REQUEST_METHOD_ENUM = {
   GET: "GET",
   POST: "POST",
   DELETE: "DELETE",
@@ -12,4 +12,4 @@ export const HTTP_REQUEST_METHOD_RECORD = {
   CONNECT: "CONNECT",
 } as const;
 
-export type HttpRequestMethod = ValueOf<typeof HTTP_REQUEST_METHOD_RECORD>;
+export type HttpRequestMethod = ValueOf<typeof HTTP_REQUEST_METHOD_ENUM>;
