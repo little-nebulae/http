@@ -1,6 +1,6 @@
-import type { ValueOf } from "@little-nebulae/type-utils";
+import type { ValueOf } from "type-fest";
 
-export const HTTP_CLIENT_ERROR_RESPONSE_STATUS_RECORD = {
+export const HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM = {
   BAD_REQUEST: {
     code: 400,
     text: "Bad Request",
@@ -31,9 +31,9 @@ export const HTTP_CLIENT_ERROR_RESPONSE_STATUS_RECORD = {
   },
 } as const;
 
-export type HttpClientErrorResponseStatusRecord =
-  typeof HTTP_CLIENT_ERROR_RESPONSE_STATUS_RECORD;
+export type HttpClientErrorResponseStatusEnum =
+  typeof HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM;
 export type HttpClientErrorResponseStatusCode =
-  ValueOf<HttpClientErrorResponseStatusRecord>["code"];
+  ValueOf<HttpClientErrorResponseStatusEnum>["code"];
 export type HttpClientErrorResponseStatusText =
-  ValueOf<HttpClientErrorResponseStatusRecord>["text"];
+  ValueOf<HttpClientErrorResponseStatusEnum>["text"];
