@@ -1,6 +1,6 @@
-import type { ValueOf } from "@little-nebulae/type-utils";
+import type { ValueOf } from "type-fest";
 
-export const HTTP_SUCCESSFUL_RESPONSE_STATUS_RECORD = {
+export const HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM = {
   OK: {
     code: 200,
     text: "OK",
@@ -15,9 +15,9 @@ export const HTTP_SUCCESSFUL_RESPONSE_STATUS_RECORD = {
   },
 } as const;
 
-export type HttpSuccessfulResponseStatusRecord =
-  typeof HTTP_SUCCESSFUL_RESPONSE_STATUS_RECORD;
+export type HttpSuccessfulResponseStatusEnum =
+  typeof HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM;
 export type HttpSuccessfulResponseStatusCode =
-  ValueOf<HttpSuccessfulResponseStatusRecord>["code"];
+  ValueOf<HttpSuccessfulResponseStatusEnum>["code"];
 export type HttpSuccessfulResponseStatusText =
-  ValueOf<HttpSuccessfulResponseStatusRecord>["text"];
+  ValueOf<HttpSuccessfulResponseStatusEnum>["text"];
