@@ -31,9 +31,10 @@ export const HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM = {
   },
 } as const;
 
-export type HttpClientErrorResponseStatusEnum =
-  typeof HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM;
+type HttpClientErrorResponseStatus = ValueOf<
+  typeof HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM
+>;
 export type HttpClientErrorResponseStatusCode =
-  ValueOf<HttpClientErrorResponseStatusEnum>["code"];
+  HttpClientErrorResponseStatus["code"];
 export type HttpClientErrorResponseStatusText =
-  ValueOf<HttpClientErrorResponseStatusEnum>["text"];
+  HttpClientErrorResponseStatus["text"];
