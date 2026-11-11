@@ -12,7 +12,6 @@
   },
   "scripts": {
     "build": "tsdown",
-    "try": "tsx ./src/try.ts",
     "fmt": "oxfmt --disable-nested-config",
     "fmt:check": "oxfmt --check --disable-nested-config",
     "lint": "oxlint --disable-nested-config",
@@ -29,7 +28,6 @@
     "oxlint-tsgolint": "7.0.2006",
     "publint": "0.3.25",
     "tsdown": "0.23.7",
-    "tsx": "4.23.15",
     "type-fest": "5.10.0",
     "typescript": "7.0.2",
     "vitest": "5.1.0"
