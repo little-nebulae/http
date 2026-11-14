@@ -10,6 +10,7 @@ export const HTTP_HEADER_ENUM = {
   COOKIE: "cookie",
   CROSS_ORIGIN_RESOURCE_POLICY: "cross-origin-resource-policy",
   DATE: "date",
+  ETAG: "etag",
   EXPIRES: "expires",
   FORWARDED: "forwarded",
   HOST: "host",
