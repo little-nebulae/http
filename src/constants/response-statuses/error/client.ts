@@ -2,120 +2,120 @@ import type { ValueOf } from "type-fest";
 
 export const HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM = {
   BAD_REQUEST: {
-    code: 400,
-    text: "Bad Request",
+    CODE: 400,
+    TEXT: "Bad Request",
   },
   UNAUTHORIZED: {
-    code: 401,
-    text: "Unauthorized",
+    CODE: 401,
+    TEXT: "Unauthorized",
   },
   PAYMENT_REQUIRED: {
-    code: 402,
-    text: "Payment Required",
+    CODE: 402,
+    TEXT: "Payment Required",
   },
   FORBIDDEN: {
-    code: 403,
-    text: "Forbidden",
+    CODE: 403,
+    TEXT: "Forbidden",
   },
   NOT_FOUND: {
-    code: 404,
-    text: "Not Found",
+    CODE: 404,
+    TEXT: "Not Found",
   },
   METHOD_NOT_ALLOWED: {
-    code: 405,
-    text: "Method Not Allowed",
+    CODE: 405,
+    TEXT: "Method Not Allowed",
   },
   NOT_ACCEPTABLE: {
-    code: 406,
-    text: "Not Acceptable",
+    CODE: 406,
+    TEXT: "Not Acceptable",
   },
   PROXY_AUTHENTICATION_REQUIRED: {
-    code: 407,
-    text: "Proxy Authentication Required",
+    CODE: 407,
+    TEXT: "Proxy Authentication Required",
   },
   REQUEST_TIMEOUT: {
-    code: 408,
-    text: "Request Timeout",
+    CODE: 408,
+    TEXT: "Request Timeout",
   },
   CONFLICT: {
-    code: 409,
-    text: "Conflict",
+    CODE: 409,
+    TEXT: "Conflict",
   },
   GONE: {
-    code: 410,
-    text: "Gone",
+    CODE: 410,
+    TEXT: "Gone",
   },
   LENGTH_REQUIRED: {
-    code: 411,
-    text: "Length Required",
+    CODE: 411,
+    TEXT: "Length Required",
   },
   PRECONDITION_FAILED: {
-    code: 412,
-    text: "Precondition Failed",
+    CODE: 412,
+    TEXT: "Precondition Failed",
   },
   CONTENT_TOO_LARGE: {
-    code: 413,
-    text: "Content Too Large",
+    CODE: 413,
+    TEXT: "Content Too Large",
   },
   URI_TOO_LONG: {
-    code: 414,
-    text: "URI Too Long",
+    CODE: 414,
+    TEXT: "URI Too Long",
   },
   UNSUPPORTED_MEDIA_TYPE: {
-    code: 415,
-    text: "Unsupported Media Type",
+    CODE: 415,
+    TEXT: "Unsupported Media Type",
   },
   RANGE_NOT_SATISFIABLE: {
-    code: 416,
-    text: "Range Not Satisfiable",
+    CODE: 416,
+    TEXT: "Range Not Satisfiable",
   },
   EXPECTATION_FAILED: {
-    code: 417,
-    text: "Expectation Failed",
+    CODE: 417,
+    TEXT: "Expectation Failed",
   },
   IM_A_TEAPOT: {
-    code: 418,
-    text: "I'm a teapot",
+    CODE: 418,
+    TEXT: "I'm a teapot",
   },
   MISDIRECTED_REQUEST: {
-    code: 421,
-    text: "Misdirected Request",
+    CODE: 421,
+    TEXT: "Misdirected Request",
   },
   UNPROCESSABLE_CONTENT: {
-    code: 422,
-    text: "Unprocessable Content",
+    CODE: 422,
+    TEXT: "Unprocessable Content",
   },
   LOCKED: {
-    code: 423,
-    text: "Locked",
+    CODE: 423,
+    TEXT: "Locked",
   },
   FAILED_DEPENDENCY: {
-    code: 424,
-    text: "Failed Dependency",
+    CODE: 424,
+    TEXT: "Failed Dependency",
   },
   TOO_EARLY: {
-    code: 425,
-    text: "Too Early",
+    CODE: 425,
+    TEXT: "Too Early",
   },
   UPGRADE_REQUIRED: {
-    code: 426,
-    text: "Upgrade Required",
+    CODE: 426,
+    TEXT: "Upgrade Required",
   },
   PRECONDITION_REQUIRED: {
-    code: 428,
-    text: "Precondition Required",
+    CODE: 428,
+    TEXT: "Precondition Required",
   },
   TOO_MANY_REQUESTS: {
-    code: 429,
-    text: "Too Many Requests",
+    CODE: 429,
+    TEXT: "Too Many Requests",
   },
   REQUEST_HEADER_FIELDS_TOO_LARGE: {
-    code: 431,
-    text: "Request Header Fields Too Large",
+    CODE: 431,
+    TEXT: "Request Header Fields Too Large",
   },
   UNAVAILABLE_FOR_LEGAL_REASONS: {
-    code: 451,
-    text: "Unavailable For Legal Reasons",
+    CODE: 451,
+    TEXT: "Unavailable For Legal Reasons",
   },
 } as const;
 
@@ -123,6 +123,6 @@ type HttpClientErrorResponseStatus = ValueOf<
   typeof HTTP_CLIENT_ERROR_RESPONSE_STATUS_ENUM
 >;
 export type HttpClientErrorResponseStatusCode =
-  HttpClientErrorResponseStatus["code"];
+  HttpClientErrorResponseStatus["CODE"];
 export type HttpClientErrorResponseStatusText =
-  HttpClientErrorResponseStatus["text"];
+  HttpClientErrorResponseStatus["TEXT"];
