@@ -7,6 +7,7 @@ export const HTTP_HEADER_ENUM = {
   CONTENT_ENCODING: "content-encoding",
   CONTENT_TYPE: "content-type",
   COOKIE: "cookie",
+  KEEP_ALIVE: "keep-alive",
   RETRY_AFTER: "retry-after",
 } as const;
 
