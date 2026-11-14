@@ -2,6 +2,7 @@ import type { ValueOf } from "type-fest";
 
 export const HTTP_HEADER_ENUM = {
   AUTHORIZATION: "authorization",
+  CONTENT_ENCODING: "content-encoding",
   CONTENT_TYPE: "content-type",
   COOKIE: "cookie",
   RETRY_AFTER: "retry-after",
