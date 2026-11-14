@@ -11,6 +11,7 @@ export const HTTP_HEADER_ENUM = {
   FORWARDED: "forwarded",
   HOST: "host",
   KEEP_ALIVE: "keep-alive",
+  LAST_MODIFIED: "last-modified",
   RETRY_AFTER: "retry-after",
   SET_COOKIE: "set-cookie",
 } as const;
