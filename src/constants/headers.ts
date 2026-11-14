@@ -8,6 +8,7 @@ export const HTTP_HEADER_ENUM = {
   CONTENT_SECURITY_POLICY: "content-security-policy",
   CONTENT_TYPE: "content-type",
   COOKIE: "cookie",
+  CROSS_ORIGIN_RESOURCE_POLICY: "cross-origin-resource-policy",
   EXPIRES: "expires",
   FORWARDED: "forwarded",
   HOST: "host",
