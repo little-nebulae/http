@@ -12,6 +12,7 @@ export const HTTP_HEADER_ENUM = {
   HOST: "host",
   KEEP_ALIVE: "keep-alive",
   LAST_MODIFIED: "last-modified",
+  LOCATION: "location",
   RETRY_AFTER: "retry-after",
   SET_COOKIE: "set-cookie",
 } as const;
