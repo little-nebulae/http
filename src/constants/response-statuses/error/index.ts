@@ -9,5 +9,5 @@ export const HTTP_ERROR_RESPONSE_STATUS_ENUM = {
 } as const;
 
 type HttpErrorResponseStatus = ValueOf<typeof HTTP_ERROR_RESPONSE_STATUS_ENUM>;
-export type HttpErrorResponseStatusCode = HttpErrorResponseStatus["code"];
-export type HttpErrorResponseStatusText = HttpErrorResponseStatus["text"];
+export type HttpErrorResponseStatusCode = HttpErrorResponseStatus["CODE"];
+export type HttpErrorResponseStatusText = HttpErrorResponseStatus["TEXT"];

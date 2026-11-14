@@ -13,5 +13,5 @@ export const HTTP_RESPONSE_STATUS_RECORD = {
 } as const;
 
 type HttpResponseStatus = ValueOf<typeof HTTP_RESPONSE_STATUS_RECORD>;
-export type HttpResponseStatusCode = HttpResponseStatus["code"];
-export type HttpResponseStatusText = HttpResponseStatus["text"];
+export type HttpResponseStatusCode = HttpResponseStatus["CODE"];
+export type HttpResponseStatusText = HttpResponseStatus["TEXT"];
