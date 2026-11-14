@@ -5,6 +5,7 @@ export const HTTP_HEADER_ENUM = {
   CACHE_CONTROL: "cache-control",
   CONNECTION: "connection",
   CONTENT_ENCODING: "content-encoding",
+  CONTENT_SECURITY_POLICY: "content-security-policy",
   CONTENT_TYPE: "content-type",
   COOKIE: "cookie",
   EXPIRES: "expires",
