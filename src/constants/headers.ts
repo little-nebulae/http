@@ -19,6 +19,7 @@ export const HTTP_HEADER_ENUM = {
   LOCATION: "location",
   ORIGIN: "origin",
   REFERER: "referer",
+  REFERRER_POLICY: "referrer-policy",
   RETRY_AFTER: "retry-after",
   SET_COOKIE: "set-cookie",
   TRANSFER_ENCODING: "transfer-encoding",
