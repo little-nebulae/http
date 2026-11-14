@@ -17,6 +17,7 @@ export const HTTP_HEADER_ENUM = {
   RETRY_AFTER: "retry-after",
   SET_COOKIE: "set-cookie",
   TRANSFER_ENCODING: "transfer-encoding",
+  UPGRADE: "upgrade",
 } as const;
 
 export type HttpHeader = ValueOf<typeof HTTP_HEADER_ENUM>;
