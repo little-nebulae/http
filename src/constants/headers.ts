@@ -9,6 +9,7 @@ export const HTTP_HEADER_ENUM = {
   COOKIE: "cookie",
   KEEP_ALIVE: "keep-alive",
   RETRY_AFTER: "retry-after",
+  SET_COOKIE: "set-cookie",
 } as const;
 
 export type HttpHeader = ValueOf<typeof HTTP_HEADER_ENUM>;
