@@ -2,32 +2,32 @@ import type { ValueOf } from "type-fest";
 
 export const HTTP_REDIRECTION_RESPONSE_STATUS_ENUM = {
   MULTIPLE_CHOICES: {
-    code: 300,
-    text: "Multiple Choices",
+    CODE: 300,
+    TEXT: "Multiple Choices",
   },
   MOVED_PERMANENTLY: {
-    code: 301,
-    text: "Moved Permanently",
+    CODE: 301,
+    TEXT: "Moved Permanently",
   },
   FOUND: {
-    code: 302,
-    text: "Found",
+    CODE: 302,
+    TEXT: "Found",
   },
   SEE_OTHER: {
-    code: 303,
-    text: "See Other",
+    CODE: 303,
+    TEXT: "See Other",
   },
   NOT_MODIFIED: {
-    code: 304,
-    text: "Not Modified",
+    CODE: 304,
+    TEXT: "Not Modified",
   },
   TEMPORARY_REDIRECT: {
-    code: 307,
-    text: "Temporary Redirect",
+    CODE: 307,
+    TEXT: "Temporary Redirect",
   },
   PERMANENT_REDIRECT: {
-    code: 308,
-    text: "Permanent Redirect",
+    CODE: 308,
+    TEXT: "Permanent Redirect",
   },
 } as const;
 
@@ -35,6 +35,6 @@ type HttpRedirectionResponseStatus = ValueOf<
   typeof HTTP_REDIRECTION_RESPONSE_STATUS_ENUM
 >;
 export type HttpRedirectionResponseStatusCode =
-  HttpRedirectionResponseStatus["code"];
+  HttpRedirectionResponseStatus["CODE"];
 export type HttpRedirectionResponseStatusText =
-  HttpRedirectionResponseStatus["text"];
+  HttpRedirectionResponseStatus["TEXT"];
