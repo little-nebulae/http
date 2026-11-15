@@ -5,13 +5,13 @@ import { HTTP_INFORMATIONAL_RESPONSE_STATUS_ENUM } from "@/constants/response-st
 import { HTTP_REDIRECTION_RESPONSE_STATUS_ENUM } from "@/constants/response-statuses/redirection";
 import { HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM } from "@/constants/response-statuses/success";
 
-export const HTTP_RESPONSE_STATUS_RECORD = {
+export const HTTP_RESPONSE_STATUS_ENUM = {
   ...HTTP_INFORMATIONAL_RESPONSE_STATUS_ENUM,
   ...HTTP_SUCCESSFUL_RESPONSE_STATUS_ENUM,
   ...HTTP_REDIRECTION_RESPONSE_STATUS_ENUM,
   ...HTTP_ERROR_RESPONSE_STATUS_ENUM,
 } as const;
 
-type HttpResponseStatus = ValueOf<typeof HTTP_RESPONSE_STATUS_RECORD>;
+type HttpResponseStatus = ValueOf<typeof HTTP_RESPONSE_STATUS_ENUM>;
 export type HttpResponseStatusCode = HttpResponseStatus["CODE"];
 export type HttpResponseStatusText = HttpResponseStatus["TEXT"];
