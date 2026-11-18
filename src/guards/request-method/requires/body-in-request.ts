@@ -4,14 +4,14 @@ import type { HttpRequestMethod } from "@/constants/request-methods";
 
 import { HTTP_REQUEST_METHOD_ENUM } from "@/constants/request-methods";
 
-export type HttpRequestMethodThatExpectsBodyInRequest = ExtractFrom<
+export type HttpRequestMethodThatRequiresBodyInRequest = ExtractFrom<
   HttpRequestMethod,
   "PATCH" | "POST" | "PUT" | "QUERY"
 >;
 
-export function isHttpRequestMethodThatExpectsBodyInRequest(
+export function isHttpRequestMethodThatRequiresBodyInRequest(
   method: string,
-): method is HttpRequestMethodThatExpectsBodyInRequest {
+): method is HttpRequestMethodThatRequiresBodyInRequest {
   return (
     method === HTTP_REQUEST_METHOD_ENUM.PATCH ||
     method === HTTP_REQUEST_METHOD_ENUM.POST ||
